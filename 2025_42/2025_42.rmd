@@ -8,6 +8,24 @@ library(janitor)
 ```
 
 ```{r}
-culture_wars <- read_csv("pew_culture_wars_2024.csv")
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+culture_wars <- read_csv("2025_42/pew_culture_wars_2024.csv") |> clean_names()
+culture_wars
 ```
 
+```{r}
+ggplot(culture_wars, aes(y = issue)) +
+  geom_segment(aes(x = biden_supporters_percent, xend = trump_supporters_percent, y = issue, yend = issue)) +
+  geom_point(aes(x = biden_supporters_percent),  color = "blue3", size = 6) +
+  geom_point(aes(x = trump_supporters_percent), color = "red3", size = 6) +
+  labs(
+    title = "repuplicans vs democrats on culture issues"
+  ) +
+  theme(
+    plot.title = element_text(size = 30, face = "bold"),
+    axis.text.y = element_text(size = 20),
+    axis.title.y = element_blank(),
+    axis.title.x = element_blank()
+  )
+```

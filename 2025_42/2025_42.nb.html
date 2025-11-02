@@ -1762,8 +1762,10 @@ library(janitor)</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiY3VsdHVyZV93YXJzIDwtIHJlYWRfY3N2KFwicGV3X2N1bHR1cmVfd2Fyc18yMDI0LmNzdlwiKSJ9 -->
-<pre class="r"><code>culture_wars &lt;- read_csv(&quot;pew_culture_wars_2024.csv&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjpbImtuaXRyOjpvcHRzX2tuaXQkc2V0KHJvb3QuZGlyID0gcnByb2pyb290OjpmaW5kX3JzdHVkaW9fcm9vdF9maWxlKCkpIiwiIiwiY3VsdHVyZV93YXJzIDwtIHJlYWRfY3N2KFwiMjAyNV80Mi9wZXdfY3VsdHVyZV93YXJzXzIwMjQuY3N2XCIpIl19 -->
+<pre class="r"><code>knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+culture_wars &lt;- read_csv(&quot;2025_42/pew_culture_wars_2024.csv&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-message-begin eyJkYXRhIjoiUm93czogOCBDb2x1bW5zOiA0XG7ilIDilIAgQ29sdW1uIHNwZWNpZmljYXRpb24g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5EZWxpbWl0ZXI6IFwiLFwiXG5jaHIgKDEpOiBJc3N1ZVxuZGJsICgzKTogQmlkZW5fc3VwcG9ydGVyc18lLCBUcnVtcF9zdXBwb3J0ZXJzXyUsIEdhcF8ocGVyY2VudGFnZV9wb2ludHMpXG5cbuKEuSBVc2UgYHNwZWMoKWAgdG8gcmV0cmlldmUgdGhlIGZ1bGwgY29sdW1uIHNwZWNpZmljYXRpb24gZm9yIHRoaXMgZGF0YS5cbuKEuSBTcGVjaWZ5IHRoZSBjb2x1bW4gdHlwZXMgb3Igc2V0IGBzaG93X2NvbF90eXBlcyA9IEZBTFNFYCB0byBxdWlldCB0aGlzIG1lc3NhZ2UuXG4ifQ== -->
 <pre><code>Rows: 8 Columns: 4
@@ -1775,11 +1777,21 @@ dbl (3): Biden_supporters_%, Trump_supporters_%, Gap_(percentage_points)
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 <!-- rnb-message-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiY3VsdHVyZV93YXJzIn0= -->
+<pre class="r"><code>culture_wars</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiPGRpdiBkYXRhLXBhZ2VkdGFibGU9XCJmYWxzZVwiPlxuICA8c2NyaXB0IGRhdGEtcGFnZWR0YWJsZS1zb3VyY2UgdHlwZT1cImFwcGxpY2F0aW9uL2pzb25cIj5cbntcImNvbHVtbnNcIjpbe1wibGFiZWxcIjpbXCJJc3N1ZVwiXSxcIm5hbWVcIjpbMV0sXCJ0eXBlXCI6W1wiY2hyXCJdLFwiYWxpZ25cIjpbXCJsZWZ0XCJdfSx7XCJsYWJlbFwiOltcIkJpZGVuX3N1cHBvcnRlcnNfJVwiXSxcIm5hbWVcIjpbMl0sXCJ0eXBlXCI6W1wiZGJsXCJdLFwiYWxpZ25cIjpbXCJyaWdodFwiXX0se1wibGFiZWxcIjpbXCJUcnVtcF9zdXBwb3J0ZXJzXyVcIl0sXCJuYW1lXCI6WzNdLFwidHlwZVwiOltcImRibFwiXSxcImFsaWduXCI6W1wicmlnaHRcIl19LHtcImxhYmVsXCI6W1wiR2FwXyhwZXJjZW50YWdlX3BvaW50cylcIl0sXCJuYW1lXCI6WzRdLFwidHlwZVwiOltcImRibFwiXSxcImFsaWduXCI6W1wicmlnaHRcIl19XSxcImRhdGFcIjpbe1wiMVwiOlwiR3VuIG93bmVyc2hpcCBkb2VzIG1vcmUgdG8gaW5jcmVhc2Ugc2FmZXR5IGJ5IGFsbG93aW5nIGxhdy1hYmlkaW5nIGNpdGl6ZW5zIHRvIHByb3RlY3QgdGhlbXNlbHZlc1wiLFwiMlwiOlwiMjNcIixcIjNcIjpcIjg2XCIsXCI0XCI6XCI2M1wifSx7XCIxXCI6XCJUaGUgbGVnYWN5IG9mIHNsYXZlcnkgYWZmZWN0cyB0aGUgcG9zaXRpb24gb2YgQmxhY2sgcGVvcGxlIGluIEFtZXJpY2FuIHNvY2lldHkgdG9kYXkgYSBncmVhdCBkZWFsL2ZhaXIgYW1vdW50XCIsXCIyXCI6XCI3OVwiLFwiM1wiOlwiMjdcIixcIjRcIjpcIjUyXCJ9LHtcIjFcIjpcIkFtZXJpY2HigJlzIG9wZW5uZXNzIHRvIHBlb3BsZSBmcm9tIGFsbCBvdmVyIHRoZSB3b3JsZCBpcyBlc3NlbnRpYWwgdG8gd2hvIHdlIGFyZSBhcyBhIG5hdGlvblwiLFwiMlwiOlwiODdcIixcIjNcIjpcIjM2XCIsXCI0XCI6XCI1MVwifSx7XCIxXCI6XCJTb21lb25lIGNhbiBiZSBhIG1hbiBvciBhIHdvbWFuIGV2ZW4gaWYgdGhhdCBpcyBkaWZmZXJlbnQgZnJvbSB0aGUgc2V4IHRoZXkgd2VyZSBhc3NpZ25lZCBhdCBiaXJ0aFwiLFwiMlwiOlwiNTlcIixcIjNcIjpcIjlcIixcIjRcIjpcIjUwXCJ9LHtcIjFcIjpcIlRoZSBjcmltaW5hbCBqdXN0aWNlIHN5c3RlbSBpbiB0aGlzIGNvdW50cnkgaXMgZ2VuZXJhbGx5IG5vdCB0b3VnaCBlbm91Z2ggb24gY3JpbWluYWxzXCIsXCIyXCI6XCI0MFwiLFwiM1wiOlwiODFcIixcIjRcIjpcIjQxXCJ9LHtcIjFcIjpcIlNvY2lldHkgaXMgYmV0dGVyIG9mZiBpZiBwZW9wbGUgbWFrZSBtYXJyaWFnZSBhbmQgaGF2aW5nIGNoaWxkcmVuIGEgcHJpb3JpdHlcIixcIjJcIjpcIjE5XCIsXCIzXCI6XCI1OVwiLFwiNFwiOlwiNDBcIn0se1wiMVwiOlwiUmVsaWdpb24gc2hvdWxkIGJlIGtlcHQgc2VwYXJhdGUgZnJvbSBnb3Zlcm5tZW50IHBvbGljaWVzXCIsXCIyXCI6XCI4NlwiLFwiM1wiOlwiNTZcIixcIjRcIjpcIjMwXCJ9LHtcIjFcIjpcIlRoZSBnYWlucyB3b21lbiBoYXZlIG1hZGUgaW4gc29jaWV0eSBoYXZlIGNvbWUgYXQgdGhlIGV4cGVuc2Ugb2YgbWVuXCIsXCIyXCI6XCI5XCIsXCIzXCI6XCIyNVwiLFwiNFwiOlwiMTZcIn1dLFwib3B0aW9uc1wiOntcImNvbHVtbnNcIjp7XCJtaW5cIjp7fSxcIm1heFwiOlsxMF19LFwicm93c1wiOntcIm1pblwiOlsxMF0sXCJtYXhcIjpbMTBdfSxcInBhZ2VzXCI6e319fVxuICA8XC9zY3JpcHQ+XG48XC9kaXY+In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["Issue"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Biden_supporters_%"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Trump_supporters_%"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Gap_(percentage_points)"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Gun ownership does more to increase safety by allowing law-abiding citizens to protect themselves","2":"23","3":"86","4":"63"},{"1":"The legacy of slavery affects the position of Black people in American society today a great deal/fair amount","2":"79","3":"27","4":"52"},{"1":"America’s openness to people from all over the world is essential to who we are as a nation","2":"87","3":"36","4":"51"},{"1":"Someone can be a man or a woman even if that is different from the sex they were assigned at birth","2":"59","3":"9","4":"50"},{"1":"The criminal justice system in this country is generally not tough enough on criminals","2":"40","3":"81","4":"41"},{"1":"Society is better off if people make marriage and having children a priority","2":"19","3":"59","4":"40"},{"1":"Religion should be kept separate from government policies","2":"86","3":"56","4":"30"},{"1":"The gains women have made in society have come at the expense of men","2":"9","3":"25","4":"16"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQpgYGB7ciBzZXR1cH0KbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkoamFuaXRvcikKYGBgCgpgYGB7cn0KY3VsdHVyZV93YXJzIDwtIHJlYWRfY3N2KCJwZXdfY3VsdHVyZV93YXJzXzIwMjQuY3N2IikKYGBgCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQpgYGB7ciBzZXR1cH0KbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkoamFuaXRvcikKYGBgCgpgYGB7cn0Ka25pdHI6Om9wdHNfa25pdCRzZXQocm9vdC5kaXIgPSBycHJvanJvb3Q6OmZpbmRfcnN0dWRpb19yb290X2ZpbGUoKSkKCmN1bHR1cmVfd2FycyA8LSByZWFkX2NzdigiMjAyNV80Mi9wZXdfY3VsdHVyZV93YXJzXzIwMjQuY3N2IikKY3VsdHVyZV93YXJzCmBgYAoKCgo=</div>
 
 
 
