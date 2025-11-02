@@ -1,0 +1,13 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r setup}
+library(tidyverse)
+library(janitor)
+```
+
+```{r}
+culture_wars <- read_csv("pew_culture_wars_2024.csv")
+```
+
