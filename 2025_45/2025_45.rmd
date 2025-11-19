@@ -1,0 +1,86 @@
+---
+title: "R Notebook"
+output: html_document
+---
+
+```{r setup}
+library(tidyverse)
+library(janitor)
+
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+csv <- read_csv("2025_45/terrorism_by_ideology_1994-2025.csv")
+
+ideologies <- c(
+  "Total",
+  "Left",
+  "Right",
+  "Ethnonationalist",
+  "Jihadist",
+  "Other"
+)
+
+terrorism <- csv |>
+  pivot_longer(
+    cols = ideologies,
+    names_to = "ideology",
+    values_to = "count"
+  ) |>
+  clean_names() |>
+  mutate(ideology = factor(ideology, levels = ideologies)) |>
+  filter(ideology != "Total") |>
+  filter(year < 2025) |>
+  arrange(year)
+
+terrorism
+```
+
+```{r}
+ggplot(terrorism, aes(year, count, fill = ideology)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ideology) +
+  labs(
+    title = "Terrorist Attacks and Plots in the United States by Perpetrator Ideology",
+    y = "Number of attacks",
+    x = "Year",
+    fill = "Ideology"
+  )
+
+size <- 400
+
+ggsave(
+  "2025_45/final_plot.svg",
+  scale = 0.5,
+  width = 4*size,
+  height = 3*size,
+  units = "px",
+  dpi = 100
+)
+```
+
+```{r}
+terrorism |>
+  ggplot(aes(x = year, y = count, color = ideology)) +
+  geom_point() +
+  geom_line() +
+  labs(
+    title = "Terrorist Attacks and Plots in the United States by Perpetrator Ideology",
+    y = "Number of attacks",
+    x = "Year",
+    color = "Ideology"
+  )
+```
+
+```{r}
+terrorism |>
+  filter(ideology %in% c("Left", "Right")) |>
+  ggplot(aes(x = year, y = count, color = ideology)) +
+  geom_point() +
+  geom_line() +
+  labs(
+    title = "Terrorist Attacks and Plots in the United States by Perpetrator Ideology",
+    y = "Number of attacks",
+    x = "Year",
+    color = "Ideology"
+  )
+```
