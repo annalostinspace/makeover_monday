@@ -10,7 +10,24 @@ library(janitor)
 ```{r}
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
-culture_wars <- read_csv("2025_42/pew_culture_wars_2024.csv") |> clean_names()
+csv <- read_csv("2025_42/pew_culture_wars_2024.csv")
+
+culture_wars <- csv |>
+  pivot_longer(
+    cols = c("Biden_supporters_%", "Trump_supporters_%"),
+    names_to = "party",
+    values_to = "percentage"
+  ) |>
+  clean_names() |>
+  mutate(
+    party = case_match(
+      party,
+      "Biden_supporters_%" ~ "Democrats",
+      "Trump_supporters_%" ~ "Republicans",
+      .default = "No Party"
+    )
+  ) |>
+  arrange(desc(gap_percentage_points))
 culture_wars
 ```
 
@@ -20,14 +37,26 @@ ggplot(culture_wars, aes(y = issue)) +
   geom_point(aes(x = biden_supporters_percent),  color = "blue3", size = 3) +
   geom_point(aes(x = trump_supporters_percent), color = "red3", size = 3) +
   labs(
-    title = "repuplicans vs democrats on culture issues"
+    title = "Differences between Biden and Trump supporters on cultural issues",
+    x = "% of voters say..."
   ) +
   theme(
-    plot.title = element_text(size = 30, face = "bold"),
-    axis.text.y = element_text(size = 12),
-    axis.title.y = element_blank(),
-    axis.title.x = element_blank()
+    axis.title.y = element_blank()
   )
 
-ggsave("2025_42/default.png")
+size <- 400
+
+ggsave(
+  "2025_42/final_plot.svg",
+  scale = 0.5,
+  width = 6*size,
+  height = 3*size,
+  units = "px",
+  dpi = 100
+)
+```
+
+```{r}
+ggplot(culture_wars, aes(y = issue, x = percentage, color = party)) +
+        geom_point(size = 3)
 ```

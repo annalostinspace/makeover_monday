@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='864.00pt' height='432.00pt' viewBox='0 0 864.00 432.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw4NjQuMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='864.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='0.00' y='0.000000000000057' width='864.00' height='432.00' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNDI5LjEzfDg1OC41MnwyMi43N3w0MDEuMTI='>
+    <rect x='429.13' y='22.77' width='429.39' height='378.35' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNDI5LjEzfDg1OC41MnwyMi43N3w0MDEuMTI=)'>
+<rect x='429.13' y='22.77' width='429.39' height='378.35' style='stroke-width: 1.07; stroke: none; fill: #EBEBEB;' />
+<polyline points='466.16,401.12 466.16,22.77 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='591.28,401.12 591.28,22.77 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='716.39,401.12 716.39,22.77 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='841.51,401.12 841.51,22.77 ' style='stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='429.13,373.43 858.52,373.43 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='429.13,327.29 858.52,327.29 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='429.13,281.15 858.52,281.15 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='429.13,235.01 858.52,235.01 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='429.13,188.87 858.52,188.87 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='429.13,142.73 858.52,142.73 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='429.13,96.59 858.52,96.59 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='429.13,50.45 858.52,50.45 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='528.72,401.12 528.72,22.77 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='653.83,401.12 653.83,22.77 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<polyline points='778.95,401.12 778.95,22.77 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='518.71' y1='327.29' x2='834.00' y2='327.29' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='798.97' y1='50.45' x2='538.73' y2='50.45' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='839.00' y1='373.43' x2='583.77' y2='373.43' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='698.88' y1='188.87' x2='448.65' y2='188.87' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='603.79' y1='142.73' x2='808.98' y2='142.73' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='498.69' y1='235.01' x2='698.88' y2='235.01' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='834.00' y1='281.15' x2='683.86' y2='281.15' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='448.65' y1='96.59' x2='528.72' y2='96.59' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<circle cx='518.71' cy='327.29' r='3.56' style='stroke-width: 0.71; stroke: #0000CD; fill: #0000CD;' />
+<circle cx='798.97' cy='50.45' r='3.56' style='stroke-width: 0.71; stroke: #0000CD; fill: #0000CD;' />
+<circle cx='839.00' cy='373.43' r='3.56' style='stroke-width: 0.71; stroke: #0000CD; fill: #0000CD;' />
+<circle cx='698.88' cy='188.87' r='3.56' style='stroke-width: 0.71; stroke: #0000CD; fill: #0000CD;' />
+<circle cx='603.79' cy='142.73' r='3.56' style='stroke-width: 0.71; stroke: #0000CD; fill: #0000CD;' />
+<circle cx='498.69' cy='235.01' r='3.56' style='stroke-width: 0.71; stroke: #0000CD; fill: #0000CD;' />
+<circle cx='834.00' cy='281.15' r='3.56' style='stroke-width: 0.71; stroke: #0000CD; fill: #0000CD;' />
+<circle cx='448.65' cy='96.59' r='3.56' style='stroke-width: 0.71; stroke: #0000CD; fill: #0000CD;' />
+<circle cx='834.00' cy='327.29' r='3.56' style='stroke-width: 0.71; stroke: #CD0000; fill: #CD0000;' />
+<circle cx='538.73' cy='50.45' r='3.56' style='stroke-width: 0.71; stroke: #CD0000; fill: #CD0000;' />
+<circle cx='583.77' cy='373.43' r='3.56' style='stroke-width: 0.71; stroke: #CD0000; fill: #CD0000;' />
+<circle cx='448.65' cy='188.87' r='3.56' style='stroke-width: 0.71; stroke: #CD0000; fill: #CD0000;' />
+<circle cx='808.98' cy='142.73' r='3.56' style='stroke-width: 0.71; stroke: #CD0000; fill: #CD0000;' />
+<circle cx='698.88' cy='235.01' r='3.56' style='stroke-width: 0.71; stroke: #CD0000; fill: #CD0000;' />
+<circle cx='683.86' cy='281.15' r='3.56' style='stroke-width: 0.71; stroke: #CD0000; fill: #CD0000;' />
+<circle cx='528.72' cy='96.59' r='3.56' style='stroke-width: 0.71; stroke: #CD0000; fill: #CD0000;' />
+</g>
+<g clip-path='url(#cpMC4wMHw4NjQuMDB8MC4wMHw0MzIuMDA=)'>
+<text x='424.20' y='376.46' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='355.16px' lengthAdjust='spacingAndGlyphs'>America’s openness to people from all over the world is essential to who we are as a nation</text>
+<text x='424.20' y='330.32' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='385.17px' lengthAdjust='spacingAndGlyphs'>Gun ownership does more to increase safety by allowing law-abiding citizens to protect themselves</text>
+<text x='424.20' y='284.18' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='228.75px' lengthAdjust='spacingAndGlyphs'>Religion should be kept separate from government policies</text>
+<text x='424.20' y='238.04' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='286.20px' lengthAdjust='spacingAndGlyphs'>Society is better off if people make marriage and having children a priority</text>
+<text x='424.20' y='191.90' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='388.34px' lengthAdjust='spacingAndGlyphs'>Someone can be a man or a woman even if that is different from the sex they were assigned at birth</text>
+<text x='424.20' y='145.76' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='329.42px' lengthAdjust='spacingAndGlyphs'>The criminal justice system in this country is generally not tough enough on criminals</text>
+<text x='424.20' y='99.62' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='289.39px' lengthAdjust='spacingAndGlyphs'>The gains women have made in society have come at the expense of men</text>
+<text x='424.20' y='53.48' text-anchor='end' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='418.72px' lengthAdjust='spacingAndGlyphs'>The legacy of slavery affects the position of Black people in American society today a great deal/fair amount</text>
+<polyline points='426.39,373.43 429.13,373.43 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='426.39,327.29 429.13,327.29 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='426.39,281.15 429.13,281.15 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='426.39,235.01 429.13,235.01 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='426.39,188.87 429.13,188.87 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='426.39,142.73 429.13,142.73 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='426.39,96.59 429.13,96.59 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='426.39,50.45 429.13,50.45 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='528.72,403.86 528.72,401.12 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='653.83,403.86 653.83,401.12 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='778.95,403.86 778.95,401.12 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<text x='528.72' y='412.10' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>25</text>
+<text x='653.83' y='412.10' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>50</text>
+<text x='778.95' y='412.10' text-anchor='middle' style='font-size: 8.80px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>75</text>
+<text x='643.83' y='424.24' text-anchor='middle' style='font-size: 11.00px; font-family: "Liberation Sans";' textLength='83.62px' lengthAdjust='spacingAndGlyphs'>% of voters say...</text>
+<text x='429.13' y='14.55' style='font-size: 13.20px; font-family: "Liberation Sans";' textLength='395.39px' lengthAdjust='spacingAndGlyphs'>Differences between Biden and Trump supporters on cultural issues</text>
+</g>
+</g>
+</svg>
